@@ -5,6 +5,7 @@
 }
 body{
   background-image: linear-gradient(to right,rgb(200, 173, 173),rgba(101, 101, 235, 0.931));
+  overflow-x: hidden;
 }
 
 button{
@@ -32,6 +33,7 @@ button:focus{
 .container {
   height: 100%;
   width: 500px;
+
 }
 
 .todo {
@@ -41,12 +43,13 @@ button:focus{
   height: 200px;
   width: 100%;
   background-color: rgba(21, 120, 183, 0.73);
-  margin:20px 0 ;
+  margin:20px 0px;
   overflow: hidden;
 }
 .todo h1{
     margin: 3px  0 7px 0 ;
     color: white;
+    width: 100%;
 }
 .todo textarea{
     margin-bottom: 0px;
@@ -91,10 +94,14 @@ outline: none;
 @media screen and (max-width:500px){
  .todo{
   height: 350px;
-  margin:20px 10px ;
  }
  .mainNotes{
-  margin: 0 10px;
+  margin: 0px;
+}
+.container{
+  width: 350px;
+  margin:0;
+  padding: 0;
 }
 }
 
