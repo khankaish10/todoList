@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient(to right,rgb(200, 173, 173),rgba(101, 101, 235, 0.931));
+}
+
+button{
+    background-color: rgba(99, 104, 101, 0.959);
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 2px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(115, 124, 124, 0.959);
+}
+button:focus{
+  outline: none;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  height: 100%;
+  width: 500px;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  background-color: rgba(21, 120, 183, 0.73);
+  margin:20px 0 ;
+  overflow: hidden;
+}
+.todo h1{
+    margin: 3px  0 7px 0 ;
+    color: white;
+}
+.todo textarea{
+    margin-bottom: 0px;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    font-size: 2rem;
+}
+.todo textarea:focus{
+  outline: none;
+}
+.mainNotes{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mainNotes .smallNotes textarea{
+  resize: none;
+  height: 100%;
+  font-size: 2rem;
+}
+.mainNotes .smallNotes textarea:focus{
+outline: none;
+}
+.smallNotes{
+    width: 49%;
+    height:200px;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+     justify-content: space-between; 
+    background-color: rgba(30, 83, 143, 0.233);
+    margin: 1px 1px ;
+}
+
+.deleteBtn{
+  background-color: rgb(134, 5, 5);
+
+}
+
+
